@@ -3,29 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ortodontijos kainos Alytuje | Skaidrūs kainų planai – Alytaus implantologijos centras</title>
-  <meta name="description" content="Aiškios ortodontijos kainos Alytuje. Breketų, kapų ir konsultacijos kainos. Mokėjimas dalimis, jokių paslėptų mokesčių. Sužinokite daugiau.">
+  <title>Kainos | Dantų gydymo ir implantacijos kainos – Alytaus implantologijos centras</title>
+  <meta name="description" content="Aiškios dantų gydymo, implantacijos, ortodontijos ir protezavimo kainos Alytuje. Mokėjimas dalimis, jokių paslėptų mokesčių. Sužinokite daugiau.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Josefin+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .price-categories { max-width: 900px; margin: 0 auto; }
+    .price-category { border: 1px solid var(--color-border); border-radius: var(--radius-md); margin-bottom: 1rem; overflow: hidden; background: var(--color-white); }
+    .price-category-header { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 1.5rem; cursor: pointer; background: var(--color-white); border: none; width: 100%; text-align: left; font-family: inherit; transition: background 0.2s; }
+    .price-category-header:hover { background: var(--color-bg-soft); }
+    .price-category-header h3 { margin: 0; font-size: 1.1rem; color: var(--color-text); font-weight: 300; }
+    .price-category-header .toggle-icon { width: 24px; height: 24px; transition: transform 0.3s; flex-shrink: 0; color: var(--color-accent); }
+    .price-category.open .toggle-icon { transform: rotate(180deg); }
+    .price-category-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .price-category.open .price-category-body { max-height: 3000px; }
+    .price-table { width: 100%; border-collapse: collapse; padding: 0 1.5rem 1.5rem; }
+    .price-table-wrap { padding: 0 1.5rem 1.5rem; }
+    .price-table tr { border-bottom: 1px solid var(--color-border); }
+    .price-table tr:last-child { border-bottom: none; }
+    .price-table td { padding: 0.65rem 0; font-size: 0.95rem; color: var(--color-text-light); vertical-align: top; }
+    .price-table td:first-child { padding-right: 1rem; }
+    .price-table td:last-child { text-align: right; white-space: nowrap; font-weight: 400; color: var(--color-text); min-width: 100px; }
+    .price-table .subtable-header td { font-weight: 400; color: var(--color-accent); padding-top: 1.25rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid var(--color-border); }
+    @media (max-width: 768px) {
+      .price-category-header { padding: 1rem 1.25rem; }
+      .price-category-header h3 { font-size: 1rem; }
+      .price-table-wrap { padding: 0 1rem 1rem; }
+      .price-table td { font-size: 0.875rem; padding: 0.5rem 0; }
+    }
+  </style>
 </head>
 <body>
 
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="index.html" class="nav-logo"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="currentColor" stroke-width="2"/><path d="M12 14c0-2 1.5-4 6-4s6 2 6 4-1 3-3 5c-1.5 1.5-3 3-3 5m0 0c0-2-1.5-3.5-3-5-2-2-3-3-3-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="27" r="1.5" fill="currentColor"/></svg>Alytaus implantologijos centras</a>
+    <a href="index.html" class="nav-logo"><img src="assets/images/AIC-logo.png" alt="Alytaus implantologijos centras"></a>
     <ul class="nav-links">
       <li><a href="index.html">Pradžia</a></li>
       <li><a href="services.html">Paslaugos</a></li>
       <li><a href="about.html">Apie mus</a></li>
-      <li><a href="kids-teens.html">Vaikams</a></li>
-      <li><a href="adults.html">Suaugusiems</a></li>
       <li><a href="pricing.html" class="active">Kainos</a></li>
       <li><a href="reviews.html">Atsiliepimai</a></li>
-      <li><a href="faq.html">D.U.K.</a></li>
       <li><a href="contact.html">Kontaktai</a></li>
     </ul>
-    <div class="nav-cta"><a href="tel:+37034567890" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+370 345 67 890</a></div>
+    <div class="nav-cta"><a href="tel:+37068577404" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+370 685 77 404</a></div>
     <button class="nav-toggle" onclick="document.getElementById('navbar').classList.toggle('open')" aria-label="Meniu"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -49,76 +71,394 @@
   </div>
 </section>
 
-<!-- Pricing cards -->
+<!-- Full pricing -->
 <section class="section-padding bg-soft">
   <div class="container">
     <div class="text-center">
-      <span class="section-label">Kainų apžvalga</span>
-      <h2 class="section-title">Ortodontinio gydymo kainos</h2>
+      <span class="section-label">Kainoraštis</span>
+      <h2 class="section-title">Paslaugų kainos</h2>
       <p class="section-subtitle">Orientacinės kainos. Tikslią kainą nustatome po individualios diagnostikos.</p>
     </div>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <h3>Pirmoji konsultacija</h3>
-        <div class="price">50 € <span></span></div>
-        <ul class="pricing-features">
-          <li>Išsamus klinikinis ištyrimas</li>
-          <li>Panoraminis rentgeno vaizdas</li>
-          <li>Individualus gydymo plano aptarimas</li>
-          <li>Kainų pasiūlymas raštu</li>
-          <li>Jokių įsipareigojimų</li>
-        </ul>
-        <a href="contact.html" class="btn btn-outline" style="width:100%;">Registruotis</a>
+
+    <div class="price-categories">
+
+      <!-- 1. Consultations -->
+      <div class="price-category open">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Tyrimai ir konsultacijos</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Gyd. odontologo apžiūra</td><td>20 €</td></tr>
+              <tr><td>Ištyrimas, konsultacija, gydymo plano sudarymas (iki 60 min.)</td><td>50 €</td></tr>
+              <tr><td>Panoraminė rentgeno nuotrauka</td><td>20 €</td></tr>
+              <tr><td>Dentalinė rentgeno nuotrauka</td><td>10 €</td></tr>
+              <tr><td>Nuskausminimas</td><td>10 €</td></tr>
+            </table>
+          </div>
+        </div>
       </div>
-      <div class="pricing-card featured">
-        <h3>Metaliniai breketai</h3>
-        <div class="price">nuo 2500 € <span>/ visas gydymas</span></div>
-        <ul class="pricing-features">
-          <li>Diagnostika ir gydymo planas</li>
-          <li>Breketų uždėjimas</li>
-          <li>Visi reguliarūs vizitai</li>
-          <li>Breketų nuėmimas</li>
-          <li>Retaineris po gydymo</li>
-        </ul>
-        <a href="contact.html" class="btn btn-primary" style="width:100%;">Registruotis konsultacijai</a>
+
+      <!-- 2. Oral hygiene -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Burnos higiena</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Profesionali burnos higiena (ultragarsu ir sodapūte)</td><td>60 €</td></tr>
+              <tr><td>Konservatyvus periodontito gydymas</td><td>nuo 30–100 €</td></tr>
+              <tr><td>Dantų padengimas fluoro laku (vieno danties)</td><td>10 €</td></tr>
+              <tr><td>Dantų padengimas fluoro laku (visų dantų)</td><td>50 €</td></tr>
+              <tr><td>Jautrių dantų kaklelių aplikacijos fluoro laku (vieno danties)</td><td>10 €</td></tr>
+            </table>
+          </div>
+        </div>
       </div>
-      <div class="pricing-card">
-        <h3>Keraminiai breketai</h3>
-        <div class="price">nuo 3500 € <span>/ visas gydymas</span></div>
-        <ul class="pricing-features">
-          <li>Diagnostika ir gydymo planas</li>
-          <li>Estetiški keraminiai breketai</li>
-          <li>Visi reguliarūs vizitai</li>
-          <li>Breketų nuėmimas</li>
-          <li>Retaineris po gydymo</li>
-        </ul>
-        <a href="contact.html" class="btn btn-outline" style="width:100%;">Registruotis konsultacijai</a>
+
+      <!-- 3. Whitening -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Dantų balinimas</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Dantų balinimas klinikoje balinimo medžiaga</td><td>200 €</td></tr>
+              <tr><td>Vieno danties balinimas</td><td>20 €</td></tr>
+              <tr><td>Vidinis vieno danties balinimas</td><td>20 €</td></tr>
+            </table>
+          </div>
+        </div>
       </div>
+
+      <!-- 4. Fillings -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Terapinis gydymas — dantų plombavimas</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Plomba (priklauso nuo plombos dydžio)</td><td>nuo 50–80 €</td></tr>
+              <tr><td>Viso kramtomojo paviršiaus atstatymas su plomba</td><td>nuo 60 €</td></tr>
+              <tr><td>Estetinis priekinio danties plombavimas</td><td>nuo 120 €</td></tr>
+              <tr><td>Pamušalinė medžiaga (kalcio hidroksidas)</td><td>15 €</td></tr>
+              <tr><td>Ever X (pagalbinė atstatomoji medžiaga)</td><td>20 €</td></tr>
+              <tr><td>Mikroskopo panaudojimas (30 min.)</td><td>20 €</td></tr>
+              <tr><td>Vienkartinių medžiagų komplektas (su koferdamu)</td><td>10 €</td></tr>
+              <tr><td>Stiklo jonomerinė plomba</td><td>nuo 20 €</td></tr>
+              <tr><td>Plombos pataisa</td><td>nuo 40 €</td></tr>
+              <tr><td>MTA panaudojimas</td><td>nuo 40 €</td></tr>
+              <tr><td>Biodentino panaudojimas</td><td>nuo 30 €</td></tr>
+              <tr><td>Sienelės atstatymas</td><td>nuo 50 €</td></tr>
+              <tr class="subtable-header"><td colspan="2">Danties atstatymas prieš protezavimą</td></tr>
+              <tr><td>Danties atstatymas kompozitu</td><td>nuo 60 €</td></tr>
+              <tr><td>Danties šaknies kanalo paruošimas stiklo pluošto kaiščiui</td><td>40 €</td></tr>
+              <tr><td>Stiklo pluošto kaištis</td><td>100 €</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Children -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Vaikų dantų gydymas</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Pirminė konsultacija, pažyma į mokyklą / darželį</td><td>nuo 15 €</td></tr>
+              <tr><td>Pieninio danties plombavimas stiklo jonomerine plomba</td><td>nuo 25 €</td></tr>
+              <tr><td>Pieninio danties plombavimas spalvota „Twinky Star" plomba</td><td>nuo 35 €</td></tr>
+              <tr><td>Silantavimas (1 danties)</td><td>10 €</td></tr>
+              <tr><td>Fluoro lako panaudojimas (1 dantis)</td><td>10 €</td></tr>
+              <tr><td>Devitalizuojančios medžiagos / dezinfekcinio tvarstelio uždėjimas</td><td>20 €</td></tr>
+              <tr><td>Laikinas užpildas</td><td>15 €</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Endodontics -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Endodontologinis gydymas</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Endodontologo konsultacija</td><td>20 €</td></tr>
+              <tr><td>Vieno kanalo gydymas</td><td>nuo 95 €</td></tr>
+              <tr><td>Vieno kanalo pergydymas</td><td>nuo 115 €</td></tr>
+              <tr><td>Senos plombinės medžiagos išėmimas</td><td>30 €</td></tr>
+              <tr><td>Kanalo praėjimas</td><td>nuo 25 €</td></tr>
+              <tr><td>Kanalo valymas</td><td>25 €</td></tr>
+              <tr><td>Kanalo plombavimas</td><td>nuo 30 €</td></tr>
+              <tr><td>Lūžgalio / svetimkūnio šalinimas iš kanalo</td><td>nuo 50 €</td></tr>
+              <tr><td>Kaiščiui vietos padarymas kanale</td><td>nuo 40 €</td></tr>
+              <tr><td>Kanalo plombavimas su MTA</td><td>nuo 35 €</td></tr>
+              <tr><td>Perforacijų uždarymas su MTA</td><td>nuo 35 €</td></tr>
+              <tr><td>Įkloto šalinimas</td><td>nuo 50 €</td></tr>
+              <tr><td>Kalcio hidroksido įvedimas</td><td>nuo 15 €</td></tr>
+              <tr><td>Koferdamo panaudojimas</td><td>10 €</td></tr>
+              <tr><td>Mikroskopija</td><td>nuo 20 €</td></tr>
+              <tr><td>Dentalinė rentgeno nuotrauka</td><td>6 €</td></tr>
+              <tr class="subtable-header"><td colspan="2">Skaudamo danties gydymas</td></tr>
+              <tr><td>Devitalizuojančios pastos uždėjimas</td><td>50 €</td></tr>
+              <tr><td>Periodonto drenavimas per šaknies kanalą</td><td>60 €</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Periodontics -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Periodontologinis gydymas</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Periodontologo konsultacija</td><td>30 €</td></tr>
+              <tr><td>Kiuretažas (1 dantis)</td><td>20 €</td></tr>
+              <tr><td>Ketvirčio kiuretažas</td><td>100 €</td></tr>
+              <tr><td>Lopo operacija (1 dantis)</td><td>nuo 40 €</td></tr>
+              <tr><td>Ketvirčio lopo operacija</td><td>230 €</td></tr>
+              <tr><td>Gingivektomija (1 dantis)</td><td>50 €</td></tr>
+              <tr><td>KVP (gingivektomija su kaulo plastika)</td><td>70 €</td></tr>
+              <tr><td>Danties hemisekcija / šaknies amputacija</td><td>80 €</td></tr>
+              <tr><td>Liežuvio pasaitėlio plastika</td><td>30–60 €</td></tr>
+              <tr><td>Lūpos pasaitėlio plastika</td><td>60 €</td></tr>
+              <tr><td>Burnos prieangio plastika (1–4 dantų srityje)</td><td>70 €</td></tr>
+              <tr><td>Burnos prieangio plastika (4–6 dantų srityje)</td><td>120 €</td></tr>
+              <tr><td>Plastika laisvu gleivinės transplantatu</td><td>170 €</td></tr>
+              <tr><td>1 danties dantenų recesijos gydymas</td><td>90 €</td></tr>
+              <tr><td>Danties atidengimas ortodontiniu tikslu</td><td>nuo 60 €</td></tr>
+              <tr><td>Dantų sutvirtinimas stiklo pluošto juostele (1 dantis)</td><td>30 €</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Prosthetics -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Dantų protezavimas</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Protezuotojo konsultacija su gydymo plano sudarymu</td><td>30 €</td></tr>
+              <tr><td>Pavaškavimas (už 1 dantį)</td><td>25 €</td></tr>
+              <tr><td>Laikinas dantų pavaškavimo perkėlimas į burną (1 danties)</td><td>nuo 5 €</td></tr>
+              <tr><td>Alginatinis atspaudas</td><td>20 €</td></tr>
+              <tr><td>Silikoninis atspaudas</td><td>40 €</td></tr>
+              <tr><td>Silikoninis atspaudas nuo implantų</td><td>45 €</td></tr>
+              <tr><td>Silikoninis sąkandžio registras</td><td>40 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Išimami dantų protezai</td></tr>
+              <tr><td>Kosmetinė plokštelė (iki 3 dantų)</td><td>nuo 250 €</td></tr>
+              <tr><td>Akrilinė plokštelė (vieno žandikaulio)</td><td>350 €</td></tr>
+              <tr><td>Plokštelė termoplastinė</td><td>600–700 €</td></tr>
+              <tr><td>Metalinis lanko atraminis protezas</td><td>580–640 €</td></tr>
+              <tr><td>Plokštelė ant implantų (su lokatorių sistema)</td><td>950–1250 €</td></tr>
+              <tr><td>Lanko atraminis protezas su užraktais</td><td>1450–1750 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Neišimami protezai</td></tr>
+              <tr><td>Metalo keramikos vainikėlis</td><td>300 €</td></tr>
+              <tr><td>Metalo keramikos vainikėlis ant implanto</td><td>480 €</td></tr>
+              <tr><td>Cirkonio oksido keramikos vainikėlis</td><td>350 €</td></tr>
+              <tr><td>Cirkonio oksido monolito vainikėlis ant implanto</td><td>500 €</td></tr>
+              <tr><td>Cirkonio oksido sluoksniuotas keramikos vainikėlis ant implanto</td><td>580 €</td></tr>
+              <tr><td>Estetinis vieno danties protezavimas laminatėmis</td><td>500 €</td></tr>
+              <tr><td>Sluoksniuotas stiklo keramikos vainikėlis</td><td>450 €</td></tr>
+              <tr><td>Presuotas e-max vainikėlis</td><td>350 €</td></tr>
+              <tr><td>Keramikinis e-max užklotas</td><td>350 €</td></tr>
+              <tr><td>Laikinas plastmasinis vainikėlis</td><td>60 €</td></tr>
+              <tr><td>Laikinas frezuotas plastmasinis vainikėlis</td><td>100 €</td></tr>
+              <tr><td>Laikinas plastmasinis vainikėlis ant implanto</td><td>120 €</td></tr>
+              <tr><td>Laikinas frezuotas plastmasinis vainikėlis ant implanto</td><td>180–220 €</td></tr>
+              <tr><td>Akrilinis žandikaulio protezas ant implantų</td><td>2500–3000 €</td></tr>
+              <tr><td>Akrilinis laikinas protezas ant implantų (su detalėm)</td><td>1200–1500 €</td></tr>
+              <tr><td>Cirkonio protezas ant implantų su titano sija</td><td>nuo 5000 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Papildomi darbai</td></tr>
+              <tr><td>Vainikėlio pricementavimas</td><td>25 €</td></tr>
+              <tr><td>Seno vainikėlio nupjovimas</td><td>30 €</td></tr>
+              <tr><td>Stiklo pluošto kaištis</td><td>100 €</td></tr>
+              <tr><td>Apsauginė kapa po protezavimo</td><td>60 €</td></tr>
+              <tr><td>Balinimo kapa (vienam žandikauliui)</td><td>60 €</td></tr>
+              <tr><td>Sporto kapa</td><td>120 €</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Orthodontics -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Ortodontinis gydymas</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Ortodonto konsultacija</td><td>30 €</td></tr>
+              <tr><td>Diagnostiniai modeliai</td><td>30 €</td></tr>
+              <tr><td>Skubi ortodontinė pagalba</td><td>15 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Gydymas breketų sistema</td></tr>
+              <tr><td>Segmentiniai breketai</td><td>380–500 €</td></tr>
+              <tr><td>1 žandikaulio lanko metalinių breketų suklijavimas</td><td>600 €</td></tr>
+              <tr><td>1 žandikaulio lanko beligatūrinių breketų suklijavimas</td><td>750 €</td></tr>
+              <tr><td>1 žandikaulio lanko anti-alerginių beligatūrinių breketų suklijavimas</td><td>900 €</td></tr>
+              <tr><td>1 žandikaulio lanko safyrinių breketų suklijavimas</td><td>1100 €</td></tr>
+              <tr><td>Ortodontinės dantų tiesinimo kapos</td><td>3000–5000 €</td></tr>
+              <tr><td>Breketų sistemos lanko aktyvacija</td><td>40–100 €</td></tr>
+              <tr><td>Breketų sistemos lanko keitimas</td><td>30–60 €</td></tr>
+              <tr><td>Ortodontinis žiedas</td><td>40 €</td></tr>
+              <tr><td>Klijuojama daiginimo sagutė</td><td>40 €</td></tr>
+              <tr><td>Klijuojama sagutė gumelei kabinti (butonas)</td><td>30 €</td></tr>
+              <tr><td>Klijuojamas breketas (vamzdelis) ant krūminio danties</td><td>40 €</td></tr>
+              <tr><td>Breketų nuėmimas (dantų poliravimas, reteineriai, plokštelės)</td><td>nuo 420 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Sąkandį koreguojantys aparatai</td></tr>
+              <tr><td>Herbstas</td><td>930 €</td></tr>
+              <tr><td>Greito plėtimo sraigtas (RME)</td><td>400 €</td></tr>
+              <tr><td>Gomurinis lankas (be žiedų)</td><td>50 €</td></tr>
+              <tr><td>Gomurinis lankas ant mikro-implantų</td><td>600 €</td></tr>
+              <tr><td>Liežuvinis lankas lituotas su žiedais</td><td>250 €</td></tr>
+              <tr><td>Lituotos grotelės</td><td>300 €</td></tr>
+              <tr><td>Vietą užlaikanti kilpa</td><td>70 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Išimami ortodontiniai aparatai</td></tr>
+              <tr><td>Kapa / plokštelė (sąkandžio aukščiui pakelti)</td><td>120 €</td></tr>
+              <tr><td>Ortodontinė plokštelė (su atspaudu)</td><td>280 €</td></tr>
+              <tr><td>Spec. bruksimo kapa vaikams</td><td>100 €</td></tr>
+              <tr><td>Mikro-sraigtas (ortodontinė chirurgija)</td><td>180 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Papildomos priemonės</td></tr>
+              <tr><td>Elastikai, ortodontinis vaškas (1 vnt.)</td><td>10 €</td></tr>
+              <tr><td>Cementavimas, breketo priklijavimas / perklijavimas</td><td>nuo 25 €</td></tr>
+              <tr><td>Kapa sąkandžio aukščiui pakelti</td><td>100 €</td></tr>
+              <tr><td>Fiksuotas reteineris</td><td>60 €</td></tr>
+              <tr><td>Funkcinis reteineris</td><td>120 €</td></tr>
+              <tr><td>Reteinerio koregavimas</td><td>15 €</td></tr>
+              <tr><td>Reteinerio nuėmimas (su dantų poliravimu)</td><td>30 €</td></tr>
+              <tr><td>Plokštelės pataisa</td><td>15 €</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Surgery & Implantation -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Dantų chirurgija ir implantacija</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr><td>Chirurgo konsultacija</td><td>30 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Dantų šalinimas</td></tr>
+              <tr><td>Pieninio danties šalinimas</td><td>35 €</td></tr>
+              <tr><td>Nuolatinio danties šalinimas</td><td>45–95 €</td></tr>
+              <tr><td>Išdygusio protinio danties šalinimas</td><td>60–100 €</td></tr>
+              <tr><td>Neišdygusio protinio danties šalinimas</td><td>90–140 €</td></tr>
+              <tr><td>Išrauto danties vietos užpildymas kaulo pakaitalais</td><td>120 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Skubi pagalba uždegimų atvejais</td></tr>
+              <tr><td>Incizija (pjūvis), dreno įvedimas</td><td>60 €</td></tr>
+              <tr><td>Perikoronarito, alveolito gydymas</td><td>40 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Dantų operacijos</td></tr>
+              <tr><td>Kraujo plazmos panaudojimas su PRF sistema</td><td>60 €</td></tr>
+              <tr><td>Neišdygusio danties atidengimas</td><td>145–175 €</td></tr>
+              <tr><td>Ortodontinės sagutės tvirtinimas</td><td>50 €</td></tr>
+              <tr><td>Šaknies viršūnės rezekcija be/su plombavimu</td><td>210–310 €</td></tr>
+              <tr><td>Cistos pašalinimas</td><td>120–250 €</td></tr>
+              <tr><td>Kaulo augmentacija po cistektomijos</td><td>120 €</td></tr>
+              <tr><td>Membranos uždėjimas po cistektomijos</td><td>100 €</td></tr>
+              <tr><td>Danties vainiko ilginimas</td><td>60–80 €</td></tr>
+              <tr><td>Implanto pašalinimas</td><td>230 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Pasiruošimas implantacijai</td></tr>
+              <tr><td>Būsimų dantų vaškavimas laboratorijoje</td><td>50 €</td></tr>
+              <tr><td>Chirurginis gidas pagal pavaškavimą (1 žandikauliui)</td><td>170 €</td></tr>
+              <tr><td>Chirurginis gidas 3D sistemoje (1 žandikauliui)</td><td>290 €</td></tr>
+              <tr><td>Chirurginis gidas 3D sistemoje (2 žandikauliams)</td><td>390 €</td></tr>
+              <tr><td>Kaulo ir minkštųjų audinių augmentacija po danties pašalinimo</td><td>350 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Implantacija</td></tr>
+              <tr><td>„Neo Biotech" implantas</td><td>550 €</td></tr>
+              <tr><td>„Neo Dent" implantas</td><td>550 €</td></tr>
+              <tr><td>„MegaGen" implantas (P. Korėja)</td><td>600 €</td></tr>
+              <tr><td>„Straumann Roxolid BLT/BLX SLA" implantas (Šveicarija)</td><td>650 €</td></tr>
+              <tr><td>„Straumann Roxolid BLT/BLX SLActive" implantas (Šveicarija)</td><td>750 €</td></tr>
+              <tr><td>Gijimo galvutės / dengiamojo varžto pritvirtinimas</td><td>70 €</td></tr>
+              <tr><td>Multi unit Neo Dent / Neo Biotech</td><td>80 €</td></tr>
+              <tr><td>Multi unit Straumann</td><td>120 €</td></tr>
+              <tr><td>Minkštųjų audinių augmentacija</td><td>nuo 140 €</td></tr>
+              <tr><td>Kietųjų audinių augmentacija</td><td>nuo 160 €</td></tr>
+              <tr><td>Lateralinė kaulo augmentacija implantacijos metu</td><td>140–440 €</td></tr>
+              <tr><td>Kaulo augmentacija su nerezorbuojančia memrana ir aukščio korekcija</td><td>870 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Žandikaulių rekonstrukcija</td></tr>
+              <tr><td>Sinuso pakėlimo operacija atviru būdu</td><td>790–1100 €</td></tr>
+              <tr><td>Sinuso pakėlimo operacija uždaru būdu</td><td>220–320 €</td></tr>
+              <tr><td>Sinuso cistos pašalinimas</td><td>240–300 €</td></tr>
+              <tr><td>Alogeninio kaulo bloko persodinimas</td><td>800–1200 €</td></tr>
+              <tr><td>Autogeninio kaulo bloko persodinimas</td><td>1000 €</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. Prosthesis repairs -->
+      <div class="price-category">
+        <button class="price-category-header" onclick="this.parentElement.classList.toggle('open')">
+          <h3>Protezų pataisos</h3>
+          <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="price-category-body">
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <tr class="subtable-header"><td colspan="2">Plokštelės pataisos</td></tr>
+              <tr><td>Plokštelės skilimas</td><td>nuo 50 €</td></tr>
+              <tr><td>Apkabėlės įstatymas į plokštelę</td><td>30 €</td></tr>
+              <tr><td>Danties įstatymas į plokštelę</td><td>60 €</td></tr>
+              <tr><td>Danties ir apkabėlės įstatymas į plokštelę</td><td>80 €</td></tr>
+              <tr><td>Termoplastinės apkabėlės pataisa</td><td>60–80 €</td></tr>
+              <tr><td>Plokštelės (pilnos) perbazavimas kieta baze</td><td>80 €</td></tr>
+              <tr><td>Plokštelės (dalinės) perbazavimas kieta baze</td><td>80 €</td></tr>
+              <tr><td>Plokštelės perbazavimas minkšta baze</td><td>90 €</td></tr>
+              <tr><td>Vainikėlio ar danties apdailinės medžiagos restauravimas</td><td>30 €</td></tr>
+
+              <tr class="subtable-header"><td colspan="2">Lanko atraminio protezo pataisos</td></tr>
+              <tr><td>Lanko atraminio protezo perbazavimas laboratorijoje</td><td>60–70 €</td></tr>
+              <tr><td>Lietos apkabėlės pataisa laboratorijoje</td><td>40 €</td></tr>
+              <tr><td>Aktyviosios užrakto dalies matricos keitimas</td><td>60 €</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
-      <div class="pricing-card">
-        <h3>Skaidrūs kapai</h3>
-        <div class="price">nuo 4500 € <span>/ visas gydymas</span></div>
-        <ul class="pricing-features">
-          <li>3D diagnostika ir planavimas</li>
-          <li>Individualūs skaidrūs kapai</li>
-          <li>Visi kontroliniai vizitai</li>
-          <li>Retaineris po gydymo</li>
-        </ul>
-        <a href="contact.html" class="btn btn-outline" style="width:100%;">Registruotis konsultacijai</a>
-      </div>
-      <div class="pricing-card">
-        <h3>Retaineriai</h3>
-        <div class="price">nuo 300 € <span></span></div>
-        <ul class="pricing-features">
-          <li>Fiksuotas retaineris (vienas žandikaulis)</li>
-          <li>Nuimamas retaineris</li>
-          <li>Kontrolinis vizitas</li>
-          <li>Reguliari priežiūra</li>
-        </ul>
-        <a href="contact.html" class="btn btn-outline" style="width:100%;">Sužinoti daugiau</a>
-      </div>
-    </div>
+    <p style="text-align:center; margin-top:2rem; color:var(--color-text-light); font-size:0.95rem;">Galutinė kaina priklauso nuo individualaus įvertinimo.</p>
   </div>
 </section>
 
@@ -128,7 +468,7 @@
     <div class="text-center">
       <span class="section-label">Mokėjimo galimybės</span>
       <h2 class="section-title">Patogios mokėjimo sąlygos</h2>
-      <p class="section-subtitle">Norime, kad ortodontinis gydymas būtų prieinamas kiekvienam. Todėl siūlome lanksčias mokėjimo galimybes.</p>
+      <p class="section-subtitle">Norime, kad gydymas būtų prieinamas kiekvienam. Todėl siūlome lanksčias mokėjimo galimybes.</p>
     </div>
     <div class="cards-grid">
       <div class="card">
@@ -139,43 +479,12 @@
       <div class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <h3>Kaina be staigmenų</h3>
-        <p>Visa kaina aptariama ir fiksuojama prieš pradedant gydymą. Reguliarūs vizitai, breketų skaičius ir retaineris — viskas įskaičiuota į pasiūlymą.</p>
+        <p>Visa kaina aptariama ir fiksuojama prieš pradedant gydymą. Reguliarūs vizitai ir medžiagos — viskas įskaičiuota į pasiūlymą.</p>
       </div>
       <div class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <h3>Draudimo atlyginimas</h3>
-        <p>Jei turite papildomą sveikatos draudimą, padėsime sutvarkyti dokumentus kompensacijai gauti. Dauguma draudimo bendrovių kompensuoja dalį ortodontinio gydymo kainos.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Payment Methods Detail -->
-<section class="section-padding bg-soft">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-title">Mokėjimo būdai ir sąlygos</h2>
-    </div>
-    <div class="two-col">
-      <div>
-        <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Dalimis be papildomų nuošimčių</h3>
-        <p>Gydymo kainą paskirstome į mėnesinius mokėjimus pagal gydymo trukmę. Pvz.:</p>
-        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
-          <li>3000 € gydymas → 100 € per 30 mėnesių</li>
-          <li>4000 € gydymas → 133 € per 30 mėnesių</li>
-        </ul>
-        <p><strong>Pirmas mokėjimas atliekamas pasirašant sutartį, likę — mėnesiui pradėjus gydymą.</strong></p>
-      </div>
-      <div>
-        <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Draudimo kompensacija</h3>
-        <p>Patikrinkite, ar Jūsų draudimo polis apima ortodontinio gydymo dalį:</p>
-        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
-          <li>Daugelis papildomų polisų kompensuoja 30–50%</li>
-          <li>Mūsų klinika bendradarbiauja su pagrindinėmis draudimo bendrovėmis</li>
-          <li>Padėsime sudaryti reikalingus dokumentus</li>
-          <li>Galime greitai pasiųsti sąskaitas draudikui</li>
-        </ul>
-        <p><strong>Konkretesnę informaciją gaukite paskambinę mums arba per konsultaciją.</strong></p>
+        <p>Jei turite papildomą sveikatos draudimą, padėsime sutvarkyti dokumentus kompensacijai gauti. Dauguma draudimo bendrovių kompensuoja dalį gydymo kainos.</p>
       </div>
     </div>
   </div>
@@ -193,11 +502,11 @@
 <!-- CTA -->
 <section class="cta-banner">
   <div class="container">
-    <h2>Neaišku, kuri terapija tinkamiausia Jums?</h2>
+    <h2>Neaišku, kuri paslauga tinkamiausia Jums?</h2>
     <p>Paskambinkite arba užsiregistruokite konsultacijai — mielai viską paaiškinsime ir pateiksime individualų, jūsų situacijai pritaikytą pasiūlymą.</p>
     <div class="btn-group">
       <a href="contact.html" class="btn btn-white btn-lg">Registruotis konsultacijai</a>
-      <a href="tel:+37034567890" class="btn btn-secondary btn-lg">Skambinti dabar</a>
+      <a href="tel:+37068577404" class="btn btn-secondary btn-lg">Skambinti dabar</a>
     </div>
   </div>
 </section>
@@ -226,25 +535,51 @@
           <li><a href="adults.html">Suaugusiųjų ortodontija</a></li>
           <li><a href="services.html">Breketai</a></li>
           <li><a href="services.html">Skaidrūs kapai</a></li>
-          <li><a href="faq.html">D.U.K.</a></li>
         </ul>
       </div>
       <div>
         <h4>Kontaktai</h4>
         <ul class="footer-links">
-          <li><a href="tel:+37034567890">+370 345 67 890</a></li>
+          <li><a href="tel:+37068577404">+370 685 77 404</a></li>
           <li><a href="mailto:info@alytusklinika.lt">info@alytusklinika.lt</a></li>
-          <li>Vilniaus g. 45, Alytus</li>
-          <li>I–V: 8:00–18:00, VI–VII: uždaryta</li>
+          <li>Pulko g. 48, Alytus</li>
+          <li>I–V: 8:30–17:30, VI–VII: uždaryta</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Alytaus implantologijos centras. Visos teisės saugomos.</p>
-      <p>Sukurta su meile Alytuje</p>
+      <p class="footer-legal-links"><a href="privacy-policy.html">Privatumo politika</a> | <a href="cookie-policy.html">Slapukų politika</a> | <a href="#" data-cookie-settings>Slapukų nustatymai</a></p>
     </div>
   </div>
 </footer>
 
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-content">
+    <div class="cookie-banner-text">
+      <h4>Slapukų nustatymai</h4>
+      <p>Naudojame slapukus, kad užtikrintume geriausią patirtį mūsų svetainėje. Galite pasirinkti, kuriuos slapukus norite priimti. <a href="cookie-policy.html">Sužinoti daugiau</a></p>
+    </div>
+    <div class="cookie-banner-options">
+      <label class="cookie-option">
+        <input type="checkbox" checked disabled> <span>Būtinieji</span>
+      </label>
+      <label class="cookie-option">
+        <input type="checkbox" data-cookie-category="analytics"> <span>Analitiniai</span>
+      </label>
+      <label class="cookie-option">
+        <input type="checkbox" data-cookie-category="marketing"> <span>Rinkodaros</span>
+      </label>
+    </div>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-outline btn-sm" data-cookie-reject>Atmesti visus</button>
+      <button type="button" class="btn btn-outline btn-sm" data-cookie-save>Išsaugoti pasirinkimus</button>
+      <button type="button" class="btn btn-primary btn-sm" data-cookie-accept>Priimti visus</button>
+    </div>
+  </div>
+</div>
+
+<script src="cookie-consent.js"></script>
 </body>
 </html>
