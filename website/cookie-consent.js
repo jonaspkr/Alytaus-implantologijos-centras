@@ -55,13 +55,12 @@
   }
 
   /**
-   * Hook for future analytics/marketing scripts.
+   * Hook for analytics/marketing scripts based on consent.
    * Called after consent is saved or on page load if consent exists.
    */
   function onConsentUpdate(consent) {
-    // Example usage:
-    // if (consent.analytics) { /* init analytics */ }
-    // if (consent.marketing) { /* init marketing pixels */ }
+    // Facebook Pixel is loaded in <head> of all pages
+    // Google Analytics is loaded in <head> of all pages
   }
 
   // Button handlers

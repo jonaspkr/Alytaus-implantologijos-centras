@@ -1,0 +1,17 @@
+.ftp-credentials
+.DS_Store
+
+# Source materials & working docs (not part of the website)
+*.pages
+*.docx
+*.pdf
+/Photos/
+KLINIKOS_INFO.md
+KLAUSIMYNAS_KLINIKAI.*
+
+# Root-level source photos (not served from the site)
+/*.JPG
+/*.jpg
+/*.jpeg
+/*.PNG
+/*.png

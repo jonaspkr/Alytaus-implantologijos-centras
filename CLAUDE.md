@@ -9,4 +9,24 @@
 - Static HTML/CSS website (no build tools)
 - Files in `website/` directory
 - Shared `styles.css` for all pages
-- Navigation with mega dropdown under "Paslaugos" is duplicated across all 11 HTML pages — update all when changing nav.
+- Navigation with mega dropdown under "Paslaugos" is duplicated across all 33+ HTML pages (two formats: pretty-printed and minified) — update all when changing nav.
+
+## Hosting & Deployment
+- **Host:** Hostinger shared hosting
+- **Domain:** alytausortodontai.lt
+- **FTP IP:** 46.17.175.227
+- **Deploy path:** `/domains/alytausortodontai.lt/public_html/`
+- **Credentials:** stored in `.ftp-credentials` (gitignored)
+- **Deploy command:**
+  ```bash
+  source .ftp-credentials
+  lftp -u "$FTP_USER,$FTP_PASS" ftp://$FTP_HOST -e "
+    set ftp:ssl-allow no;
+    set mirror:parallel-transfer-count 5;
+    mirror --reverse --verbose --delete \
+      website/ /domains/alytausortodontai.lt/public_html/ \
+      --exclude Dockerfile --exclude fly.toml --exclude nginx.conf \
+      --exclude preview-A.html --exclude preview-B.html --exclude preview-C.html;
+    quit"
+  ```
+- **Note:** Excludes Docker/Fly.io files and preview drafts from deployment.
