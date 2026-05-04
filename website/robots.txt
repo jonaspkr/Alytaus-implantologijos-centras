@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /preview-
 
-Sitemap: https://alytaus-implantologija.fly.dev/sitemap.xml
+Sitemap: https://alytausortodontai.lt/sitemap.xml
