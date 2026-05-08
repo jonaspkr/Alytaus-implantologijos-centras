@@ -1,4 +1,5 @@
 .ftp-credentials
+.env
 .DS_Store
 
 # Source materials & working docs (not part of the website)
