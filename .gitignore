@@ -7,6 +7,7 @@
 *.docx
 *.pdf
 /Photos/
+/briefings/
 KLINIKOS_INFO.md
 KLAUSIMYNAS_KLINIKAI.*
 
