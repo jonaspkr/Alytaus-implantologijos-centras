@@ -19,6 +19,13 @@
 - **Credentials:** stored in `.ftp-credentials` (gitignored)
 - **Deploy command:**
   ```bash
+  # Ensure all files are world-readable before upload — scripted edits on
+  # macOS sometimes write files with mode 600, which causes the web server
+  # to return 403. lftp over plain FTP does not transmit Unix permissions,
+  # and `mirror` skips re-upload when size+mtime match, so a server-side
+  # 600 file will silently stay broken across deploys.
+  chmod -R a+rX website/
+
   source .ftp-credentials
   lftp -u "$FTP_USER,$FTP_PASS" ftp://$FTP_HOST -e "
     set ftp:ssl-allow no;
@@ -30,3 +37,14 @@
     quit"
   ```
 - **Note:** Excludes Docker/Fly.io files and preview drafts from deployment.
+- **If deploy resulted in 403s:** the local chmod won't fix files already
+  on the server with mode 600. Fix them in place via lftp:
+  ```bash
+  source .ftp-credentials
+  lftp -u "$FTP_USER,$FTP_PASS" ftp://$FTP_HOST -e "
+    set ftp:ssl-allow no;
+    cd /domains/alytausortodontai.lt/public_html/;
+    chmod 644 <each-affected-file>;
+    quit"
+  ```
+  (lftp's `chmod` does not accept globs — list each file individually.)
