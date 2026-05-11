@@ -9,6 +9,25 @@
   // Track which trackers have already been loaded to avoid double-init on re-consent
   var loaded = { analytics: false, marketing: false };
 
+  // Phone-click conversion tracking — fires to GA + Pixel if they're loaded.
+  // Attached unconditionally because the listener no-ops when trackers aren't
+  // available (i.e. before consent), so it's safe in all states.
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (!a) return;
+    var phone = a.getAttribute('href').replace('tel:', '');
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'phone_click', {
+        event_category: 'contact',
+        event_label: phone,
+        value: 1
+      });
+    }
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'Contact');
+    }
+  });
+
   function loadAnalytics() {
     if (loaded.analytics) return;
     loaded.analytics = true;
