@@ -62,11 +62,12 @@ src="https://www.facebook.com/tr?id=962424326312201&ev=PageView&noscript=1"
   </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Pereiti į turinį</a>
 
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="index.html" class="nav-logo"><img src="assets/images/aic2.png" alt="Alytaus implantologijos centras"></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Pradžia</a></li>
       <li><a href="gydytojai.html">Gydytojai</a></li>
       <li class="nav-dropdown">
@@ -93,11 +94,13 @@ src="https://www.facebook.com/tr?id=962424326312201&ev=PageView&noscript=1"
         +370 685 77 404
       </a>
     </div>
-    <button class="nav-toggle" onclick="document.getElementById('navbar').classList.toggle('open')" aria-label="Meniu">
+    <button class="nav-toggle" onclick="document.getElementById('navbar').classList.toggle('open')" aria-label="Meniu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="page-header">
   <div class="container">
@@ -138,6 +141,8 @@ src="https://www.facebook.com/tr?id=962424326312201&ev=PageView&noscript=1"
     </div>
   </div>
 </section>
+
+</main>
 
 <footer class="footer">
   <div class="container">

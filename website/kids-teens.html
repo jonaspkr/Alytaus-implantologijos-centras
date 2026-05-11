@@ -62,11 +62,12 @@ src="https://www.facebook.com/tr?id=962424326312201&ev=PageView&noscript=1"
   </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Pereiti į turinį</a>
 
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="index.html" class="nav-logo"><img src="assets/images/aic2.png" alt="Alytaus implantologijos centras"></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Pradžia</a></li>
       <li><a href="gydytojai.html">Gydytojai</a></li>
       <li class="nav-dropdown">
@@ -132,9 +133,11 @@ src="https://www.facebook.com/tr?id=962424326312201&ev=PageView&noscript=1"
       <li><a href="contact.html">Kontaktai</a></li>
     </ul>
     <div class="nav-cta"><a href="tel:+37068577404" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+370 685 77 404</a></div>
-    <button class="nav-toggle" onclick="document.getElementById('navbar').classList.toggle('open')" aria-label="Meniu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" onclick="document.getElementById('navbar').classList.toggle('open')" aria-label="Meniu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="page-header">
   <div class="container">
@@ -281,6 +284,8 @@ src="https://www.facebook.com/tr?id=962424326312201&ev=PageView&noscript=1"
     </div>
   </div>
 </section>
+
+</main>
 
 <footer class="footer">
   <div class="container">

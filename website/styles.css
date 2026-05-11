@@ -8,15 +8,15 @@
   --color-primary: #1A1A1A;
   --color-primary-dark: #000000;
   --color-primary-light: #F5F4F1;
-  --color-accent: #8A7D6B;
-  --color-accent-hover: #7A6D5B;
+  --color-accent: #766558;
+  --color-accent-hover: #5C5147;
   --color-cta: #1A1A1A;
   --color-cta-hover: #000000;
-  --color-cta-secondary: #8A7D6B;
-  --color-cta-secondary-hover: #7A6D5B;
+  --color-cta-secondary: #766558;
+  --color-cta-secondary-hover: #5C5147;
   --color-text: #1A1A1A;
   --color-text-light: #5C5C5C;
-  --color-text-muted: #9A9A9A;
+  --color-text-muted: #6B6B6B;
   --color-bg: #FFFFFF;
   --color-bg-soft: #FAFAF8;
   --color-bg-warm: #F7F6F3;
@@ -39,6 +39,34 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; font-size: 16px; }
+
+/* A11y: visible focus indicator for keyboard users */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* A11y: skip-to-content link, visible only when focused */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.skip-link:focus {
+  left: 0;
+}
 
 body {
   font-family: var(--font-body);
